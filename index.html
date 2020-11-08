@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias de Halloween</title>
+    <link rel="stylesheet" href="estilos/halloween.css">
+    <script src="javascripts/halloween.js">
+    </script>
+    <link rel="icon" href="imagenes/Fabicon.ico" type="image/gif" sizes="19x19">
+</head>
+<body onload="sonar('BGM')">
+    <div id="container">
+        <audio src="sonidos/Música de Fondo para Halloween.mp3" id="BGM" controls> </audio>
+        <audio src="sonidos/murcielago.mp3" id="murcielago"></audio>
+        <audio src="sonidos/grito.mp3" id="grito"></audio>
+        <audio src="sonidos/lobo.mp3" id="lobo"> </audio>
+        <audio src="sonidos/risa.mp3" id="risa"> </audio>
+        
+        <p id="titulo">Poemas de Halloween</p>
+        <p id="Instrucciones">Pulse un cuadro para continuar</p>
+        
+        <img id="PoemaEsqueleto" src="imagenes/poema esqueleto.png" width="300">
+        <div id="esqueleto" onmouseover="mostrar('PoemaEsqueleto');sonar('murcielago')"
+        onmouseout="ocultar('PoemaEsqueleto');parar('murcielago')"></div>
+        
+        <div id="calabaza" onclick="mostrar('PoemaCalabaza');sonar('grito')"></div>
+        <img id="PoemaCalabaza" src="imagenes/poema calabaza.jpg" width="300" onclick="ocultar('PoemaCalabaza');parar('grito')">
+
+        <div id="vampiro" onclick="mostrar('PoemaVampiro');sonar('risa')"></div>
+        <img id="PoemaVampiro" src="imagenes/Poema vampiro.jpg" width="300" onclick="ocultar('PoemaVampiro');parar('risa')">
+
+        <div id="lobo" onclick="mostrar('PoemaLobo');sonar('lobo')"></div>
+        <img id="PoemaLobo" src="imagenes/Poema lobo.jpg" width="300" onclick="ocultar('PoemaLobo');parar('lobo')">
+
+        <div id="Gracias" onclick="mostrar('PoemaCalabaza');sonar('grito')"></div>
+    </div>
+</body>
+</html>

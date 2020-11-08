@@ -1,0 +1,103 @@
+@font-face {
+    font-family: halloween1;
+    src: url('tipografias/Hallotext.ttf');
+}
+
+body {background-color: black;}
+#container {position:relative;
+            background-image:url('../imagenes/wallpaper2.png');
+            margin:auto;
+            width:1470px;
+            height:706px;
+            }
+#titulo {position:absolute;
+         top:20px;
+         left:500px;
+         font-family:halloween1;
+         font-size: 3em;
+         color:rgb(187, 31, 31);
+         text-shadow:1px 1px 1px black;
+}
+#Instrucciones {position:absolute;
+              font-family:halloween1;
+              top:130px;
+              left:530px;
+              font-size:2em;
+              color:red;
+}
+#PoemaEsqueleto {position: absolute;
+       top:215px;
+       left:575px;
+       visibility:hidden;}
+#esqueleto {position:absolute;
+           top:300px;
+           left:80px;
+           width:100px;
+           height:100px;
+           cursor:pointer;
+           border:5px solid rgb(19, 17, 17);
+           border-radius: 6px ;
+           background-image: url('../imagenes/esqueleto.jpg');
+           background-color: blanchedalmond;}
+#calabaza {position:absolute;
+       top:300px;
+       left:200px;
+       width:100px;
+       height:100px;
+       cursor:pointer;
+       border:5px solid black;
+       border-radius: 6px ; 
+       background-color: blanchedalmond; 
+       background-image: url('../imagenes/calabaza.png');
+}
+#PoemaCalabaza {position:absolute;
+         top:215px;
+         left:575px;
+         
+         visibility:hidden;
+         cursor:crosshair;
+}
+#vampiro {position:absolute;
+       top:420px;
+       left:80px;
+       width:100px;
+       height:100px;
+       cursor:pointer;
+       border:5px solid black;
+       border-radius: 6px ; 
+       background-color: blanchedalmond; 
+       background-image: url('../imagenes/vampiro.png');
+}
+#PoemaVampiro {position:absolute;
+       top:215px;
+       left:575px;
+       
+       visibility:hidden;
+       cursor:crosshair;
+}
+#lobo {position:absolute;
+       top:420px;
+       left:200px;
+       width:100px;
+       height:100px;
+       cursor:pointer;
+       border:5px solid black;
+       border-radius: 6px ; 
+       background-color: blanchedalmond; 
+       background-image: url('../imagenes/lobo.png');
+}
+#PoemaLobo {position:absolute;
+       top:215px;
+       left:575px;
+       
+       visibility:hidden;
+       cursor:crosshair;
+}
+#Gracias {position:absolute;
+       top:585px;
+       left:1149px;
+       width:320px;
+       height:129px;
+       cursor:pointer;
+       background-image: url('../imagenes/zombie.gif');
+}
