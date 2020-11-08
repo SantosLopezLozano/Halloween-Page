@@ -20,9 +20,8 @@
         <p id="titulo">Poemas de Halloween</p>
         <p id="Instrucciones">Pulse un cuadro para continuar</p>
         
-        <img id="PoemaEsqueleto" src="imagenes/poema esqueleto.png" width="300">
-        <div id="esqueleto" onmouseover="mostrar('PoemaEsqueleto');sonar('murcielago')"
-        onmouseout="ocultar('PoemaEsqueleto');parar('murcielago')"></div>
+        <div id="esqueleto" onclick="mostrar('PoemaEsqueleto');sonar('grito')"></div>
+        <img id="PoemaEsqueleto" src="imagenes/poema esqueleto.png" width="300" onclick="ocultar('PoemaEsqueleto');parar('grito')">
         
         <div id="calabaza" onclick="mostrar('PoemaCalabaza');sonar('grito')"></div>
         <img id="PoemaCalabaza" src="imagenes/poema calabaza.jpg" width="300" onclick="ocultar('PoemaCalabaza');parar('grito')">
@@ -33,7 +32,9 @@
         <div id="lobo" onclick="mostrar('PoemaLobo');sonar('lobo')"></div>
         <img id="PoemaLobo" src="imagenes/Poema lobo.jpg" width="300" onclick="ocultar('PoemaLobo');parar('lobo')">
 
-        <div id="Gracias" onclick="mostrar('PoemaCalabaza');sonar('grito')"></div>
+        <img id="Graciasgif" src="imagenes/graciasgif.gif" width="300">
+        <div id="Gracias" onmouseover="mostrar('Graciasgif');sonar('murcielago')"
+        onmouseout="ocultar('Graciasgif');parar('murcielago')"></div>
     </div>
 </body>
 </html>

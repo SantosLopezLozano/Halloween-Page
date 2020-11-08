@@ -101,3 +101,11 @@ body {background-color: black;}
        cursor:pointer;
        background-image: url('../imagenes/zombie.gif');
 }
+
+#Graciasgif {position:absolute;
+       top:215px;
+       left:575px;
+       
+       visibility:hidden;
+       cursor:crosshair;
+}
